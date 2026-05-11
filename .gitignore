@@ -25,3 +25,6 @@ Thumbs.db
 # TypeScript cache
 *.tsbuildinfo
 node_modules/.tmp/
+
+# Local browser automation state
+.playwright-mcp/

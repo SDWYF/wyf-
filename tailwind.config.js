@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         sans: [
           'Inter',
+          'PingFang SC',
+          'Microsoft YaHei UI',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
