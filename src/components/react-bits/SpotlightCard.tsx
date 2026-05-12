@@ -23,7 +23,7 @@ export default function SpotlightCard({
   return (
     <div
       ref={cardRef}
-      className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-glow backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-sky-300/40 ${className}`}
+      className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] p-6 shadow-glow backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-sky-300/35 ${className}`}
       onMouseMove={(event) => {
         const bounds = event.currentTarget.getBoundingClientRect();
         setPosition({
