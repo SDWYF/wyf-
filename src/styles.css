@@ -23,13 +23,48 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #030712;
+  background: #020617; /* Slate 950 */
   overflow-x: hidden;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'HarmonyOS Sans SC', 'MiSans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', STHeiti, 'Microsoft Yahei', Tahoma, Simsun, sans-serif;
 }
 
+#app-loading {
+  position: fixed;
+  inset: 0;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+#app-loading .loader {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #38bdf8,
+    #818cf8,
+    #34d399,
+    #f472b6,
+    #38bdf8
+  );
+  -webkit-mask: radial-gradient(farthest-side, #0000 85%, #000 86%);
+  mask: radial-gradient(farthest-side, #0000 85%, #000 86%);
+  animation: app-spin 0.9s linear infinite;
+}
+#app-loading .label {
+  margin-top: 24px;
+  color: #f8fafc;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+}
+@keyframes app-spin { from { transform: rotate(0deg) } to { transform: rotate(360deg) } }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'HarmonyOS Sans SC', 'MiSans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', STHeiti, 'Microsoft Yahei', Tahoma, Simsun, sans-serif;
 }
 
 .noise-overlay {
@@ -89,4 +124,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-noise {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.65'/%3E%3C/svg%3E");
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 8s ease-in-out infinite;
 }

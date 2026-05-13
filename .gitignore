@@ -31,3 +31,6 @@ node_modules/.tmp/
 
 # Local OpenCode/provider credentials
 opencode.json
+
+# Private planning notes
+思路.txt
