@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
-import ParticleBackground from './components/ParticleBackground';
-import DataNexus from './components/DataNexus';
+import ParticleBackground from '../components/visual/ParticleBackground';
+import DataNexus from '../components/visual/DataNexus';
 import {
   Activity,
   BarChart3,
@@ -712,7 +712,7 @@ export default function App() {
 
       <footer className="relative z-10 border-t border-white/5 bg-[#020617]/50 px-6 py-12 text-center text-sm font-semibold text-slate-500 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
-          <p className="text-base">© 2026 WYF · AI × 智慧税务个人主页</p>
+          <p className="text-base">© 2026 WYF的个人网站 · AI × 智慧税务个人主页</p>
           <a href="#home" className="group flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-6 py-3 transition-colors hover:bg-white/10 hover:text-white">
             回到顶部
             <ChevronRight size={18} className="transition-transform group-hover:translate-x-1" />
