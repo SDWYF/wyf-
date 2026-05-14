@@ -2,6 +2,7 @@
   "name": "wyf-portfolio",
   "private": true,
   "version": "0.1.0",
+  "description": "WYF的个人网站",
   "type": "module",
   "scripts": {
     "dev": "vite",
