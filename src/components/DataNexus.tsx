@@ -82,7 +82,7 @@ export default function DataNexus() {
              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
              className="absolute h-48 w-48 rounded-full border-2 border-dashed border-emerald-300/30"
            />
-           <div className="relative z-10 flex h-32 w-32 flex-col items-center justify-center rounded-full border border-emerald-400/50 bg-slate-950/90 shadow-[0_0_50px_rgba(52,211,153,0.6)]">
+           <div className="relative z-10 flex h-32 w-32 flex-col items-center justify-center rounded-full border border-emerald-400/50 bg-slate-100 dark:bg-slate-950/90 shadow-[0_0_50px_rgba(52,211,153,0.6)]">
              <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/20 to-transparent rounded-full" />
              <span className="relative z-10 text-[22px] font-black leading-tight tracking-widest text-transparent bg-clip-text bg-gradient-to-br from-white to-emerald-200 drop-shadow-[0_0_10px_rgba(52,211,153,0.8)] text-center">
                SMART<br/>TAX
@@ -116,7 +116,7 @@ export default function DataNexus() {
                    className="flex flex-col items-center gap-1.5"
                    style={{ transform: 'rotateY(15deg) rotateX(-65deg)' }}
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-sky-400/60 bg-[#020617]/90 shadow-[0_0_20px_rgba(56,189,248,0.5)] backdrop-blur-md">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-sky-400/60 bg-slate-50 dark:bg-[#020617]/90 shadow-[0_0_20px_rgba(56,189,248,0.5)] backdrop-blur-md">
                     <node.icon className="h-5 w-5 text-sky-400" />
                   </div>
                   <span className="text-[10px] font-black tracking-widest text-sky-300 drop-shadow-md">{node.label}</span>
@@ -151,7 +151,7 @@ export default function DataNexus() {
                    className="flex flex-col items-center gap-1.5"
                    style={{ transform: 'rotateY(-20deg) rotateX(-65deg)' }}
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-indigo-400/60 bg-[#020617]/90 shadow-[0_0_25px_rgba(99,102,241,0.5)] backdrop-blur-md">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-indigo-400/60 bg-slate-50 dark:bg-[#020617]/90 shadow-[0_0_25px_rgba(99,102,241,0.5)] backdrop-blur-md">
                     <node.icon className="h-6 w-6 text-indigo-400" />
                   </div>
                   <span className="text-[10px] font-black tracking-widest text-indigo-300 drop-shadow-md">{node.label}</span>
@@ -163,7 +163,7 @@ export default function DataNexus() {
          {/* =======================
              AMBIENT BACKGROUND
              ======================= */}
-         <div className="absolute h-[800px] w-[800px] rounded-full border border-white/5 border-dashed" style={{ transform: 'translateZ(-150px) rotateX(60deg)' }} />
+         <div className="absolute h-[800px] w-[800px] rounded-full border border-slate-900/5 dark:border-white/5 border-dashed" style={{ transform: 'translateZ(-150px) rotateX(60deg)' }} />
          <motion.div
            animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
